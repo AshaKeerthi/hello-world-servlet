@@ -7,6 +7,7 @@ import java.io.*;
 public class HelloWorldServlet extends HttpServlet 
 {
   public void service( HttpServletRequest req, HttpServletResponse res ) throws IOException {
+    System.out.println("Jenkins working fine");
     PrintWriter out = res.getWriter();
     out.println( "Hello, World!" );
     out.close();
